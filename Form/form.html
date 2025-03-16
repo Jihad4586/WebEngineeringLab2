@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Form</h2>
+        <form>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <input type="email" id="email" placeholder="Enter your email" required oninput="checkemail()">
+            <span id="emailtxt" class="error"></span>
+
+            <input type="password" id="password" placeholder="Enter your password" required oninput="checkpass()">
+            <span id="passtxt" class="error"></span>
+
+            <input type="tel" id="phone" placeholder="Enter your phone number" required oninput="checkphn()">
+            <span id="phntxt" class="error"></span>
+
+            <input type="text" id="address" placeholder="Enter your address" required>
+
+            <label>Gender:</label>
+            <div class="gender-container">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <select id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="myscript.js"></script>
+</body>
+</html>
